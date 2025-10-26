@@ -1,9 +1,8 @@
-import React from 'react';
-
+import BannerSection from "@/components/BannerSection";
 const Home = () => {
   return (
     <div>
-      <h1 className='bg-green-400'>Hello who iam</h1>
+      <BannerSection />
     </div>
   );
 };
