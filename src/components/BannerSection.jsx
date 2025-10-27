@@ -3,9 +3,12 @@
 
 import Image from "next/image";
 import Navbar from "./Navbar";
-import { ArrowUpRight, Star } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Star } from "lucide-react";
+import { useState } from "react";
 
 export default function BannerSection() {
+  const [email, setEmail] = useState("");
+
   return (
     <div className="w-full h-screen">
       {/* Gradient + Background Image */}
@@ -19,13 +22,12 @@ export default function BannerSection() {
         }}
       ></div>
       <Navbar />
-
       {/* Content */}
-      <div className="relative w-11/12 mx-auto px-5">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div className="relative w-11/12 mx-auto px-5 py-20">
+        <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
           {/* Left: Review Badge */}
           <div className="bg-[#FDE39C] rounded-tr-2xl rounded-bl-2xl p-6 w-full max-w-36 shadow-lg">
-            <div className="w-5 mb-14 text-[#0F172A]">
+            <div className="w-5 mb-10 text-[#0F172A]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 id="uuid-21c3e3bd-c1cb-4e49-8f0d-a9afed695d62"
@@ -46,7 +48,7 @@ export default function BannerSection() {
           </div>
 
           {/* Center: Headline */}
-          <div className="flex-1 text-center lg:text-left">
+          <div className="flex-1 text-center lg:text-left justify-center">
             <div className="text-[7rem] font-bold text-white leading-28 tracking-tight  text-center">
               <div className="flex  items-center justify-center gap-3">
                 PERSONAL
@@ -66,17 +68,57 @@ export default function BannerSection() {
               <div className="text-[#CDFFB6] flex items-center justify-center gap-3 ">
                 <Image
                   src="/assets/arrow.svg"
-                  width={90}
+                  width={80}
                   height={100}
                   alt="arrow"
                 />
                 FOR YOU
               </div>
             </div>
+            <div className="w-full flex justify-center mt-10">
+              <div className="relative w-full justify-center max-w-[650px]">
+                {/* Triple layer shadow effect */}
+                <div className="absolute top-[8px] left-[8px] w-full h-full bg-primary" />
+                <div className="absolute top-[4px] left-[4px] w-full h-full bg-primary" />
+
+                {/* Main input container */}
+                <div className="relative flex border-[3px] border-primary bg-primary-foreground">
+                  {/* Input section */}
+                  <div className="flex-1 px-8 py-3">
+                    <label
+                      htmlFor="email-input"
+                      className="block text-[11px] font-bold tracking-widest mb-2 text-foreground uppercase"
+                    >
+                      ENTER EMAIL
+                    </label>
+                    <input
+                      id="email-input"
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="hello@unfold.co"
+                      className="w-full text-3xl md:text-4xl font-bold bg-transparent border-none outline-none text-foreground placeholder:text-foreground"
+                    />
+                  </div>
+
+                  {/* Button section */}
+                  <button
+                    type="submit"
+                    className="flex items-center justify-center w-[120px] md:w-[140px] bg-primary-foreground hover:opacity-90 transition-opacity border-l-[3px] border-primary"
+                    aria-label="Submit email"
+                  >
+                    <ArrowRight
+                      className="w-12 h-12 text-accent-foreground"
+                      strokeWidth={2.5}
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Right: Team Photo + Card */}
-          <div className="w-full max-w-[220px] mt-60">
+          <div className="w-full max-w-[220px] mt-40">
             <div className="relative rounded-tr-xl rounded-bl-xl overflow-hidden shadow-xl">
               <Image
                 src="https://digitalnomadshq.com.au/wp-content/uploads/2025/07/DIGITALNOMADHQ_TRIAL_EDITS-445.jpg"

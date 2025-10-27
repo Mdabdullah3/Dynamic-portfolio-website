@@ -4,7 +4,8 @@ const nextConfig = {
   images: {
     domains: [
       "images.unsplash.com",
-      "digitalnomadshq.com.au", // ← ADD THIS
+      "digitalnomadshq.com.au", 
+      "plus.unsplash.com"
     ],
   },
 };
