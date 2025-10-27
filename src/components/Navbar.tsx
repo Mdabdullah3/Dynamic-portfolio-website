@@ -4,7 +4,7 @@ import Link from "next/link";
 const Navbar = () => {
     return (
         <div className="px-5">
-            <nav className="text-primary-foreground py-4 relative z-50 w-11/12 mx-auto uppercase text-[15px] font-semibold border-b border-primary-foreground/20">
+            <nav className="text-primary-foreground py-4 relative z-50 w-11/12 mx-auto uppercase text-[16px] tracking-wide font-semibold border-b border-primary-foreground/20">
                 <div className="container mx-auto flex justify-between items-center">
                     <div className="flex items-center">
                         <Link href="/" className="text-2xl font-bold flex items-center">

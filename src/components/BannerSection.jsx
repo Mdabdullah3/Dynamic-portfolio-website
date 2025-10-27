@@ -40,7 +40,7 @@ export default function BannerSection() {
               5.0
               <Star className="w-4 h-4 fill-[#0F172A] text-[#0F172A] mb-2" />
             </div>
-            <div className="text-xs font-medium text-[#0F172A] mt-1">
+            <div className="text-sm font-medium text-[#0F172A] mt-1">
               165+ REVIEWS
             </div>
           </div>
@@ -85,7 +85,7 @@ export default function BannerSection() {
                 height={600}
                 className="w-full h-52 object-cover"
               />
-              <div className=" bg-[#CDFFB6] text-black px-4 py-2 text-sm font-semibold flex items-center justify-between">
+              <div className=" bg-[#CDFFB6] text-black px-4 py-2 text-md font-semibold flex items-center justify-between">
                 <h1>
                   MEET OUR <br /> TEAM
                 </h1>
