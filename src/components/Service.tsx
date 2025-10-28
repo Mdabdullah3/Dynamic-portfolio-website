@@ -45,7 +45,7 @@ const ServicesSection = () => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     return (
-        <section className="min-h-screen bg-background py-20 px-6 md:px-12 mt-60">
+        <section className="min-h-screen bg-background pb-10 pt-20 px-6 md:px-12 mt-60">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
