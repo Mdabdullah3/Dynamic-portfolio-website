@@ -87,7 +87,7 @@ const ServicesSection = () => {
                                 <img
                                     src={service.image}
                                     alt={service.title}
-                                    className="w-auto h-[300px] object-contain transform-gpu"
+                                    className="w-[300px] h-[300px] transform-gpu  rounded-3xl"
                                     style={{
                                         transformStyle: "preserve-3d",
                                     }}
