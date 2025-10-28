@@ -1,8 +1,9 @@
 import Image from "next/image";
+import SimpleTemplatePreview from "./TemplatePreview";
 
 const ProcessSection = () => {
     return (
-        <section className="w-full relative bg-[#0a0a0a] text-white py-20 px-4 lg:px-8" style={{
+        <section className="w-full relative bg-[#0a0a0a] text-white pt-20 pb-80 px-4 lg:px-8" style={{
             backgroundImage: `url('https://cdn.prod.website-files.com/6820cfbf0a660da1a57036ca/6826b6cca1f9d43ac73f6ab4_Background%20(4).svg')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
@@ -96,9 +97,13 @@ const ProcessSection = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute bottom-0 right-0 w-48 h-32 opacity-20">
+            <div className="absolute bottom-0 left-0 w-56 h-40 opacity-80">
                 <Image src="https://cdn.prod.website-files.com/6820cfbf0a660da1a57036ca/682359ac6872f67e0e967558_M.svg" width={200} height={200} alt="image" />
             </div>
+            <div className="absolute -bottom-[30%] left-[28%]">
+                <SimpleTemplatePreview />
+            </div>
+
         </section>
     );
 };
