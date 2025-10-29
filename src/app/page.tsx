@@ -1,8 +1,8 @@
 import BannerSection from "@/components/BannerSection";
-import HelpFull from "@/components/HelpFull";
-import Index from "@/components/Index";
+import PopularThemes from "@/components/PopularThemes";
 import Proced from "@/components/Proced";
 import ProcessSection from "@/components/ProcessSolution";
+import { Resources } from "@/components/Resources";
 import ServicesSection from "@/components/Service";
 const Home = () => {
   return (
@@ -11,9 +11,9 @@ const Home = () => {
       {/* <CustomerPreview /> */}
       <ProcessSection />
       <ServicesSection />
-      <Index />
+      <PopularThemes />
       <Proced />
-      <HelpFull />
+      <Resources />
     </div>
   );
 };

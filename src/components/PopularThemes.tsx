@@ -1,7 +1,7 @@
 "use client";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-export default function HeroSection() {
+export default function PopularThemes() {
     const images = [
         "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
         "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=80",
@@ -53,7 +53,7 @@ export default function HeroSection() {
 
                 </button>
                 <div className="mt-2 text-background">
-                    <h1 className="text-5xl font-serif font-semibold uppercase leading-tighter tracking-tighter">Create your <span className=" italic font-normal">website</span> <br /> in minutes</h1>
+                    <h1 className="text-5xl font-serif font-semibold uppercase leading-tighter tracking-tighter">Create your <em className=" italic font-normal">website</em> <br /> in minutes</h1>
                     <p className="text-md mt-2 font-normal italic font-serif">With our easy-to-use template builder. No coding skills required.</p>
                 </div>
             </div>
