@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 interface Service {
     number: string;
@@ -45,7 +45,7 @@ const ServicesSection = () => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     return (
-        <section className="min-h-screen bg-background pb-10 pt-20 px-6 md:px-12 mt-60">
+        <section className="min-h-screen bg-background pt-20 px-6 md:px-12 mt-60">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
@@ -120,7 +120,7 @@ const ServicesSection = () => {
                                     >
                                         {service.description}
                                     </p>
-                                    <ArrowRight
+                                    <ArrowUpRight
                                         className={`w-8 h-8 flex-shrink-0 transition-colors duration-600 ${hoveredIndex === index ? "text-white" : "text-foreground"
                                             }`}
                                     />

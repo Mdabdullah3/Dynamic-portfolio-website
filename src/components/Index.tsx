@@ -1,4 +1,5 @@
 "use client";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 export default function HeroSection() {
     const images = [
@@ -18,7 +19,7 @@ export default function HeroSection() {
         { top: "70%", left: "82%", rotate: "50deg" },
     ];
     return (
-        <div className="relative overflow-hidden py-20 h-screen">
+        <div className="relative overflow-hidden py-20 h-[114vh] bg-linear-to-b via-background via-20% blur-in-2xl from-background to-black ">
             <section className="relative flex flex-col items-center justify-center">
                 <div className="absolute top-0 left-0 w-full h-[85vh]">
                     {images.map((src, index) => (
@@ -45,13 +46,16 @@ export default function HeroSection() {
                 </div>
 
             </section>
-            <div className="flex flex-col justify-center absolute bottom-4 left-[35%]">
-                <h1 className="text-3xl font-semibold text-center">Our Popular Templates</h1>
-                <p className="text-center text-lg mt-2">Every project is unique. We offer a wide range of templates <br /> to fit your needs and preferences. you can also create your own template</p>
-                <div className="flex justify-center mt-3">
-                    <button className="bg-muted items-center w-60  text-white font-bold tracking-wider mt-2 text-sm uppercase px-5 py-4 rounded-2xl">See All Templates</button>
-                </div>
+            <div className="flex flex-col items-center justify-center text-center absolute bottom-12 left-1/2 transform -translate-x-1/2 w-full max-w-4xl">
 
+                <button className="flex flex-col items-center bg-linear-to-b via-[#feffda] from-[#eef4ff] to-[#e8fbef] w-40 h-40 justify-center rounded-full group  transition-colors duration-300 font-semibold tracking-wider text-md uppercase shadow-lg text-black hover:bg-linear-to-t hover:from-[#feffda] hover:to-[#e8fbef] via-[#eef4ff"> <ArrowUpRight className=" h-6 w-6 group-hover:translate-x-1 transition-transform duration-200 mb-2" />
+                    Explore All <br /> Templates
+
+                </button>
+                <div className="mt-2 text-background">
+                    <h1 className="text-5xl font-serif font-semibold uppercase leading-tighter tracking-tighter">Create your <span className=" italic font-normal">website</span> <br /> in minutes</h1>
+                    <p className="text-md mt-2 font-normal italic font-serif">With our easy-to-use template builder. No coding skills required.</p>
+                </div>
             </div>
         </div>
     );
