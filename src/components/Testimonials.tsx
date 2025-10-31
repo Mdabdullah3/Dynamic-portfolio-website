@@ -165,7 +165,7 @@ export default function TestimonialSection() {
     const visibleIndices = getVisibleIndices();
 
     return (
-        <div className="relative flex flex-col items-center justify-start overflow-hidden bg-linear-to-b  from-background via-[#ffdaf1] to-background]">
+        <div className="relative flex flex-col items-center justify-start overflow-hidden bg-linear-to-b  from-background via-[#00e5f152] to-background]">
             {/* Background Grid Pattern (For visual flair like the image) */}
             <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
                 <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">

@@ -10,7 +10,7 @@ import {
 const Footer: React.FC = () => {
   return (
     <div>
-      <footer className="bg-zinc-950 text-neutral-400">
+      <footer className="bg-black text-background mt-10">
         <div className='w-11/12 mx-auto'>
           <div className="container mx-auto px-8 pt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12">
             <div>
@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
         relative pt-20
         w-full
         flex items-center justify-center
-        overflow-hidden bg-linear-to-b from-black via-[#06248F] to-[#6e73ff] -mb-20
+        overflow-hidden bg-linear-to-b from-black via-[#06248fc1] to-[#6effffae] -mb-20
       "
       >
         <h1
@@ -141,9 +141,9 @@ const Footer: React.FC = () => {
           text-[90px] sm:text-[120px] md:text-[280px]
           font-extrabold      
            text-background    
-          relative uppercase leading-36                
+          relative uppercase leading-36 opacity-50 tracking-tight                
         "
-         
+
         >
           Me On Spot
         </h1>
