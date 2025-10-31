@@ -45,13 +45,11 @@ const ServicesSection = () => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     return (
-        <section className="min-h-screen bg-background pt-20 px-6 md:px-12 mt-60">
-            <div className="max-w-7xl mx-auto">
+        <section className="min-h-screen bg-background  px-6 md:px-12 pt-72 bg-linear-to-b  from-background via-[#faffe2] via-20% to-background]">
+            <div className="max-w-7xl mx-auto pt-10">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <p className="text-sm font-medium tracking-wider uppercase text-muted-foreground mb-2">
-                        OUR SERVICES
-                    </p>
+                   
                     <h2 className="text-5xl md:text-6xl font-bold leading-14">
                         From idea to <em className="italic font-serif font-normal">execution</em>
                         <br />

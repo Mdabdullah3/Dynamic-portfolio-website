@@ -4,6 +4,7 @@ import Proced from "@/components/Proced";
 import ProcessSection from "@/components/ProcessSolution";
 import { Resources } from "@/components/Resources";
 import ServicesSection from "@/components/Service";
+import Testimonials from "@/components/Testimonials";
 const Home = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const Home = () => {
       <PopularThemes />
       <Proced />
       <Resources />
+      <Testimonials />
     </div>
   );
 };
