@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
         relative pt-20
         w-full
         flex items-center justify-center
-        overflow-hidden bg-linear-to-b from-black via-[#06248F] to-[#fa93e0] -mb-20
+        overflow-hidden bg-linear-to-b from-black via-[#06248F] to-[#6e73ff] -mb-20
       "
       >
         <h1
