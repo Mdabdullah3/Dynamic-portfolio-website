@@ -43,7 +43,6 @@ const services: Service[] = [
 
 const ServicesSection = () => {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
     return (
         <section className="min-h-screen bg-background  px-6 md:px-12 pt-72 bg-linear-to-b  from-background via-[#faffe2] via-20% to-background]">
             <div className="max-w-7xl mx-auto pt-10">
