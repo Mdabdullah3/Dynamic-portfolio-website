@@ -4,15 +4,11 @@ import { Menu, X, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-// Fallback URL for the logo, since external file paths are not available here.
-const LOGO_PLACEHOLDER_URL = "https://placehold.co/250x40/465AE9/ffffff?text=LOGO";
-
-// Framer Motion variants for the mobile sidebar animation
 const sidebarVariants = {
     closed: {
-        x: "100%", // Start off-screen to the right
+        x: 400, // Start off-screen to the right (adjust 400 to your sidebar width in px)
         transition: {
-            type: "spring",
+            type: "spring" as const,
             stiffness: 300,
             damping: 35,
         }
@@ -20,7 +16,7 @@ const sidebarVariants = {
     open: {
         x: 0, // Slide onto the screen
         transition: {
-            type: "spring",
+            type: "spring" as const,
             stiffness: 300,
             damping: 35,
         }
