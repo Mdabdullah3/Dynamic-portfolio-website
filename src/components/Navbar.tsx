@@ -22,7 +22,6 @@ const sidebarVariants = {
         }
     }
 };
-
 // Data for navigation links
 const navLinks = [
     { name: "Demo", href: "/" },
@@ -32,7 +31,6 @@ const navLinks = [
     { name: "Pricing", href: "/pricing" },
     { name: "Contact", href: "/contact" },
 ];
-
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
